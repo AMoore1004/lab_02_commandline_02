@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -38,7 +38,7 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+No output
 
 
 ==========
@@ -56,7 +56,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good mornin'
 
 
 ==========
@@ -66,7 +66,7 @@ $ echo *
 
 What happens?
 ----------
-
+pplications Developer Library Network Quarantine SDKs System Users Volumes bin cmake console.log console.log.0.gz console.log.1.gz console.log.2.gz console.log.3.gz console.log.4.gz dev etc home installer.failurerequests net opt private resources:Library revs.json sbin tmp usr var
 
 
 ==========
@@ -74,7 +74,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
@@ -87,7 +87,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +102,8 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE>
 
 
 ==========
@@ -105,7 +111,15 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
+curl -o google.html www.google.com
 
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Warning: Failed to create the file google.html: Permission denied
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (23) Failed writing body (0 != 12203)
+ent-v314-017:/ student$ <HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+-bash: syntax error near unexpected token `<'
 
 
 ==========
@@ -113,7 +127,9 @@ Write the command you used below.  Also copy and paste the output below.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
+pwd
 
+/
 
 
 ==========
@@ -121,7 +137,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd ~
 
 
 ==========
@@ -137,6 +153,11 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
+
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   178  100   178    0     0    193      0 --:--:-- --:--:-- --:--:--   193
 
 
 
@@ -145,7 +166,7 @@ Write down the command that you used to download the file below.  Additionally, 
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip mtec1002-lab-02.zip
 
 
 ==========
@@ -164,7 +185,15 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+AMALogger20190109.log	Library			Things
+AMALogger20190128.log	MPLABXProjects		ipe.properties
+AMALogger20190130.log	MTECH1003		isus
+Adlm			Movies			mtec1002-lab-02.zip
+Adobe			Music			pizza
+Applications		New Unity Project	pymel.log
+Desktop			Pictures		stuff
+Documents		Public			xgen
+Downloads		QLData
 
 
 ==========
@@ -176,7 +205,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+hello.txt
 
 
 ==========
@@ -188,7 +217,15 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+AMALogger20190109.log	Library			Things
+AMALogger20190128.log	MPLABXProjects		ipe.properties
+AMALogger20190130.log	MTECH1003		isus
+Adlm			Movies			mtec1002-lab-02.zip
+Adobe			Music			pizza
+Applications		New Unity Project	pymel.log
+Desktop			Pictures		stuff
+Documents		Public			stuff.tar
+Downloads		QLData			xgen
 
 
 ==========
@@ -198,15 +235,23 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
-
+a stuff
+a stuff/hello.txt
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+AMALogger20190109.log	Library			Things
+AMALogger20190128.log	MPLABXProjects		ipe.properties
+AMALogger20190130.log	MTECH1003		isus
+Adlm			Movies			mtec1002-lab-02.zip
+Adobe			Music			pizza
+Applications		New Unity Project	pymel.log
+Desktop			Pictures		stuff
+Documents		Public			stuff.tar
+Downloads		QLData			xgen
 
 
 ==========
@@ -216,7 +261,15 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+AMALogger20190109.log	Library			Things
+AMALogger20190128.log	MPLABXProjects		ipe.properties
+AMALogger20190130.log	MTECH1003		isus
+Adlm			Movies			mtec1002-lab-02.zip
+Adobe			Music			pizza
+Applications		New Unity Project	pymel.log
+Desktop			Pictures		stuff
+Documents		Public			stuff.tar.gz
+Downloads		QLData			xgen
 
 
 ==========
@@ -230,8 +283,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
-
+books		logs		mtec1002-lab-02	stuff.tar.gz	web
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
 
@@ -239,7 +291,8 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+x stuff/
+x stuff/hello.txt
 
 
 ==========
@@ -258,6 +311,7 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
+
 
 
 
